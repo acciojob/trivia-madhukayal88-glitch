@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>India Trivia Quiz</title>
   <style>
-    .styled-quote {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .question-section {
+      margin-bottom: 30px;
+    }
+
+    .question-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .options label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    blockquote {
       max-width: 600px;
       margin: 10px;
       padding: 15px;
@@ -10,25 +30,27 @@
       background-color: #f8fffe;
       font-weight: bold;
     }
+
+    .source {
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
 
-  <h2>Quiz Time 🧠</h2>
-  <form>
-    <p><strong>What is the capital of India?</strong></p>
-    <label>
-      <input type="radio" name="capital" value="newdelhi">
-      New Delhi
-    </label><br>
-    <label>
-      <input type="radio" name="capital" value="mumbai">
-      Mumbai
-    </label>
-  </form>
+  <div class="question-section">
+    <h2>What is the capital of India?</h2>
+    <div class="options">
+      <label><input type="radio" name="capital" value="new-delhi"> New Delhi</label>
+      <label><input type="radio" name="capital" value="mumbai"> Mumbai</label>
+    </div>
+  </div>
 
-  <blockquote class="styled-quote">
-    "New Delhi is the capital of India and an administrative district of NCT Delhi." — <em>Wikipedia</em>
+  <blockquote>
+    “New Delhi is the capital of India and an administrative district of NCT Delhi.”
+    <div class="source">— Wikipedia</div>
   </blockquote>
 
 </body>
