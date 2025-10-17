@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>India Trivia Quiz</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
 
-    .question-section {
-      margin-bottom: 30px;
-    }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-    .question-section h2 {
-      margin-bottom: 10px;
-    }
+        h2 {
+            margin-top: 0;
+        }
 
-    .options label {
-      display: block;
-      margin: 5px 0;
-    }
+        .options {
+            margin: 15px 0;
+        }
 
-    blockquote {
-      max-width: 600px;
-      margin: 10px;
-      padding: 15px;
-      border-left: 8px solid green;
-      background-color: #f8fffe;
-      font-weight: bold;
-    }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
 
-    .source {
-      font-style: italic;
-      font-size: 0.9em;
-      margin-top: 5px;
-    }
-  </style>
+        blockquote {
+            max-width: 600px;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="question-section">
-    <h2>What is the capital of India?</h2>
-    <div class="options">
-      <label><input type="radio" name="capital" value="new-delhi"> New Delhi</label>
-      <label><input type="radio" name="capital" value="mumbai"> Mumbai</label>
-    </div>
-  </div>
+    <div class="quiz-container">
+        <h2>What is the capital of India?</h2>
 
-  <blockquote>
-    “New Delhi is the capital of India and an administrative district of NCT Delhi.”
-    <div class="source">— Wikipedia</div>
-  </blockquote>
+        <div class="options">
+            <label>
+                <input type="radio" name="capital" value="New Delhi">
+                New Delhi
+            </label>
+            <label>
+                <input type="radio" name="capital" value="Mumbai">
+                Mumbai
+            </label>
+        </div>
+
+        <blockquote>
+            "New Delhi is the capital of India and an administrative district of NCT Delhi." — <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank">Wikipedia</a>
+        </blockquote>
+    </div>
 
 </body>
 </html>
