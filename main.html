@@ -1,23 +1,34 @@
-<div class="options">
-    <input type="radio" id="newdelhi" name="capital" value="New Delhi">
-    <label for="newdelhi">New Delhi</label>
-
-    <input type="radio" id="mumbai" name="capital" value="Mumbai">
-    <label for="mumbai">Mumbai</label>
-</div>
-
-<script>
-function checkAnswer() {
-    const selected = document.querySelector('input[name="capital"]:checked');
-    console.log(selected); // DEBUG: check what is selected
-    if(selected) {
-        if(selected.value === "New Delhi") {
-            alert("Correct!");
-        } else {
-            alert("Incorrect. The correct answer is New Delhi.");
-        }
-    } else {
-        alert("Please select an option!");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India Capital Quiz</title>
+  <style>
+    .styled-quote {
+      max-width: 600px;
+      margin: 10px;
+      padding: 15px;
+      border-left: 8px solid green;
+      background-color: #f8fffe;
+      font-weight: bold;
     }
-}
-</script>
+  </style>
+</head>
+<body>
+
+  <h2>Quiz: Indian Geography</h2>
+
+  <form>
+    <p><strong>What is the capital of India?</strong></p>
+    <label><input type="radio" name="capital" value="newdelhi"> New Delhi</label><br>
+    <label><input type="radio" name="capital" value="mumbai"> Mumbai</label>
+  </form>
+
+  <blockquote class="styled-quote">
+    “New Delhi is the capital of India and an administrative district of NCT Delhi.” — Wikipedia
+  </blockquote>
+
+  <p><strong>Topic Tags:</strong> Geography, India, Capitals, Trivia</p>
+
+</body>
+</html>
